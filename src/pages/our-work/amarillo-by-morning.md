@@ -1,6 +1,7 @@
 ---
 templateKey: album
 title: amarillo
+image: ../../images/amarillo/one.jpg
 images:
     - image: ../../images/amarillo/one.jpg
     - image: ../../images/amarillo/two.jpg

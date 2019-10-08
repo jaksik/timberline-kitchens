@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Nav from "./nav"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -20,11 +20,19 @@ const Layout = ({ children }) => {
           title
         }
       }
+      siteLogo: file(relativePath: { eq: "logo.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, quality: 80) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
+      <Nav siteTitle={data.site.siteMetadata.title} siteLogo={data.siteLogo.childImageSharp.fluid}/>
       <div
         style={{
           margin: `0 auto`,

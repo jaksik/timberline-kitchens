@@ -1,6 +1,7 @@
 ---
 templateKey: album
 title: hub
+image: ../../images/amarillo/one.jpg
 images:
     - image: ../../images/hub/one.jpg
     - image: ../../images/hub/two.jpg
