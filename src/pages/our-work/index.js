@@ -17,10 +17,10 @@ const IndexPage = ({ data }) => {
       {/** Map through cover images */}
       {data.allMarkdownRemark.edges.map(project => {
 
-        const image = data.coverImages.find(n => {
-            return n.node.relativePath === project.node.frontMatter.coverImage;
-        });
-        console.log("image: ", image)
+        // const image = data.coverImages.find(n => {
+        //     return n.node.relativePath === project.node.frontMatter.coverImage;
+        // });
+        console.log("data: ", data)
 
         // const imageFluid = image.node.childImageSharp.sizes;
 
@@ -32,15 +32,15 @@ const IndexPage = ({ data }) => {
                   <h3>{project.node.frontmatter.title}</h3>
                 </div>
               </div>
-              {/* <Img
-                  title={project.frontmatter.title}
+              <Img
+                  title={project.node.frontmatter.title}
                   alt="Screenshot of Project"
-                  fluid={imageSizes}
+                  fluid={project.node.frontmatter.image.childImageSharp.fluid}
                   className="card-img_src center-block"
                   imgStyle={{height: `70vh`}}
                   style={{height: `70vh`}}
                   durationFadeIn={1000}
-              /> */}
+              />
             </div>
           </AniLink>
         )
