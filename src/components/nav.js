@@ -31,11 +31,6 @@ function Nav({ siteTitle, siteLogo }) {
               <div class="bar3"></div>
             </div>
             </span>
-
-            
-
-
-
           </Row>
         </Col>
         <div id="myNav" className="nav-overlay" style={{height:(open? `100%` : `0%`)}}>
@@ -50,8 +45,8 @@ function Nav({ siteTitle, siteLogo }) {
             <AniLink fade to="/company">
               <p>Company</p>
             </AniLink>
-            <AniLink fade to="/contact">
-              <p>Contact</p>
+            <AniLink fade to="/resources">
+              <p>Resources</p>
             </AniLink>
             <AniLink fade to="/contact">
               <p>Contact</p>

@@ -19,6 +19,7 @@
   top: 20px;
   right: 45px;
   font-size: 60px;
+  z-index: 4;
 }
   
 .nav-content p {
@@ -35,8 +36,8 @@
 }
 
 .nav-icon {
-  padding-top: 30%
-
+  padding-top: 30%;
+  z-index: 6;
 }
 
 .nav-icon:hover {
