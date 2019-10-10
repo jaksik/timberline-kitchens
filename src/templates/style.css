@@ -2,6 +2,11 @@
     padding-top: 50px;
 } */
 
-.gallery-img {
-    margin-top: 20px;
+.gallery-image {
+    margin: 20px auto;
+}
+
+.portrait-image {
+    max-width: 55%;
+
 }

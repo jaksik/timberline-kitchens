@@ -1,13 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./style.css"
-
+import "./contact.css"
 const ContactPage = () => (
   <Layout>
     <SEO title="Page two" />
+   <div style={{ width: `80%`, margin: `0 auto`}}>
+   <h5 className="page-title">CONTACT US</h5>
+   <h4 className="page-title">Tell us about your next project</h4>
+
+   </div>
     <form
       name="contact"
       method="post"
@@ -22,47 +27,38 @@ const ContactPage = () => (
       <input style={{display: `none`}} type="text" /><br />
 
       <input required className="form-input" name="name" placeholder="First and Last Name*" type="text" /><br />
+      
+      <input required className="form-input" name="address" placeholder="Address*" type="text" /><br />
+      
+      <input required className="form-input" name="city" placeholder="City*" type="text" /><br />
 
       <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
 
       <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
 
-      <select className="form-input" required name="prefered-lake">
-        <option disabled>Prefered lake for lesson</option>
-        <option value="Lake-Austin">Lake Austin</option>
-        <option value="Lake-Travis">Lake Travis</option>
-        <option value="Lake-LBJ">Lake LBJ</option>
-        <option value="Canyon-Lake">Canyon Lake</option>
-      </select><br />
+      <textarea className="form-input" name="message" placeholder="Project description, questions, schedule an appointment" type="textarea" /><br />
 
-      <select className="form-input" required name="boat">
-        <option disabled>Boat for lesson</option>
-        <option value="Private-Owner">Private Owner</option>
-        <option value="Boat-Club">Boat Club</option>
-        <option value="Boar-Rental">Boat Rental</option>
-      </select><br />
-     
-      <select className="form-input" required name="experience-level">
-        <option disabled>Your experience level</option>
-        <option value="Never stood up">Have never successfully stood up</option>
-        <option value="Can stand up, little maneuvering">Can stand up, little or basic maneuvering</option>
-        <option value="Ready for advanced">Comfortable manurvering, ready for advanced practice</option>
-      </select>
-
-      <input type="date"
-        placeholder="Preffered day:"
-        className="form-input"
-        name="meeting-time"
-        min="2019-01-03T00:00"
-        max="2020-31-31T00:00"/>
-      <br />
-      <br/>
-
-      <textarea className="form-input" name="message" placeholder="  Anything else we should know before your lesson?" type="textarea" /><br />
-
-      <button className="submit-button">Send It!</button>
+      <button className="submit-button">Let's Start</button>
 
     </form>
+
+    <Row className="no-gutters">
+      <Col xs="12" sm="6" className="contact-text first-contact" style={{borderRight:`1px solid black`}}>
+        <h3>Local?</h3>
+        <p style={{fontWeight:`bold`}}>Check out our showroom at:</p>
+        <p>120 Buffalo Street
+          <br/>
+          Dillon Colorado 80435
+        </p>
+      </Col>
+      <Col xs="12" sm="6" className="contact-text">
+        <h3>Free Quotes!</h3>
+        <p style={{fontWeight:`bold`}}>Contact us at:</p>
+        <p>970-389-8983<br/>
+        info@mtnkitchens.com</p>
+      </Col>
+    </Row>
+  
   </Layout>
 )
 

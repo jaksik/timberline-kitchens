@@ -1,0 +1,25 @@
+.page-title {
+    font-weight: bold;
+}
+
+.contact-text {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.first-contact {
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (min-width: 576px) {
+    .first-contact {
+        border-bottom: none;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .first-contact {
+        border-bottom: none;
+    }
+}
+

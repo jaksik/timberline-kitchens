@@ -3,7 +3,9 @@ html, body {
 }
 
 .cover-img {
-    margin-top: 20px;
+    max-height: 650vh;
+    overflow: hidden;
+    margin: 20px auto;
     position: relative;
 }
 

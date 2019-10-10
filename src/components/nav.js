@@ -10,7 +10,6 @@ import "./nav.css"
 function Nav({ siteTitle, siteLogo }) {
   // Declare a new state variable, which we'll call "count"
   const [open, toggle] = useState(false);
-    console.log("Open?:", open);
   return (
     <header>
       <Row className="no-gutters">

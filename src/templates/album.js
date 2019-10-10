@@ -5,15 +5,16 @@ import Img from 'gatsby-image';
 import "./style.css"
 
 export default ({ data }) => {
-  console.log(data)
+  console.log("album: ", data)
   return (
     <Layout>
       <div className="album-wrapper"> 
         {data.markdownRemark.frontmatter.images.map(image => {
             console.log(image);
+            const imgFluid = image.image.childImageSharp.fluid;
           return (
-            <div className="gallery-img">
-              <Img fluid={image.image.childImageSharp.fluid} imgStyle={{}} style={{}} />
+            <div className={`gallery-image` + (imgFluid.aspectRatio > .9 ? `` : ` portrait-image`)}>
+              <Img fluid={imgFluid} imgStyle={{}} style={{}} />
             </div>
           )
         })}
