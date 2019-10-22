@@ -3,9 +3,9 @@ html, body {
 }
 
 .cover-img {
-    max-height: 650vh;
+    max-height: 68vh;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 40px auto;
     position: relative;
 }
 
@@ -23,7 +23,7 @@ html, body {
 }
 
 .overlay:hover {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .text{

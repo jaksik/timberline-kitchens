@@ -2,6 +2,12 @@
     margin: 40px;
 }
 
+.line-divider {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  margin: 30px 0px;
+}
+
 @media only screen and (min-width: 768px) {
     .page-container {
       margin: 20px;
@@ -16,6 +22,6 @@
   
   @media only screen and (min-width: 1200px) {
     .page-container {
-      margin: 60px 160px;
+      margin: 60px 360px;
     }
   }

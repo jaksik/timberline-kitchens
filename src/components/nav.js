@@ -51,9 +51,9 @@ function Nav({ siteTitle, siteLogo }) {
             <AniLink fade to="/company">
               <p>Company</p>
             </AniLink>
-            <AniLink fade to="/resources">
+            {/* <AniLink fade to="/resources">
               <p>Resources</p>
-            </AniLink>
+            </AniLink> */}
             <AniLink fade to="/contact">
               <p>Contact</p>
             </AniLink>

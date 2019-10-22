@@ -2,11 +2,12 @@
 templateKey: whatwedo
 title: Cabinet Installation
 subtitle: Save time and money by not replacing your perfectly good cabinets
-image: ../images/hub/one.jpg
+images:
+    - image: ../images/new/black-cabinets.jpg
+    - image: ../images/new/blue-prints.png
 ---
 
-## New Cabinetry
-##### Frameless or Traditional
+## New Cabinetry | Frameless or Traditional
 When choosing to install all new cabinetry Mtn Kitchens offers a variety of Showplace Wood Products to select from:
 
 #### Frameless (Evo Line)
