@@ -4,14 +4,14 @@ import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
-import "./style.css"
+import "../styles/index.css"
 
 const ResourcePage = () => (
   <Layout>
     <SEO title="Page two" />
-    <Container>
+    <div className="page-container">
     <Tabs/>
-    </Container>
+    </div>
   </Layout>
 )
 

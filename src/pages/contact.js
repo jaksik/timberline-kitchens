@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import { Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "./style.css"
 import "./contact.css"
 const ContactPage = () => (
   <Layout>
