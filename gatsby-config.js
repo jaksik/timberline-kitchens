@@ -20,6 +20,25 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Pacifico`,
+            variants: [`400`]
+          },
+          {
+            family: `Playball`,
+            variants: [`400`]
+          },
+          {
+            family: `Roboto`,
+            subsets: [`latin`]
+          },
+        ],
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,

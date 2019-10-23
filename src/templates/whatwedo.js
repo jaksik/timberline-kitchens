@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { Container, Row, Col } from "reactstrap"
 import Layout from "../components/layout"
 import Img from 'gatsby-image';
@@ -23,17 +23,20 @@ export default ({ data }) => {
           </Col>
           <Row className="no-gutters" style={{textAlign:`center`}}>
             <Col xs="12" sm="6" className="mt-md-5">
-              <h5>Catalog Downloads</h5>
-              <a>Styles, Woods, & Finishes</a><br/>
-              <a>EVO-Frameless European Style</a><br/>
-              <a>EVO-Frameless European Style</a><br/>
-              <a>EVO-Frameless European Style</a><br/>
-              <a>EVO-Frameless European Style</a>
+              <h4 className="font-weight-bold">Catalog Downloads</h4>
+              <Link><h4>Styles, Woods, & Finishes</h4></Link>
+              <Link><h4>EVO-Frameless European Style</h4></Link>
+              <Link><h4>EVO-Gallery</h4></Link>
+              <Link><h4>Gallery of Kitchens</h4></Link>
+              <Link><h4>Cabinetry for the Bath</h4></Link>
             </Col>
             <Col xs="12" sm="6" className="mt-md-5">
-              <h5 className="">FREE QUOTES!</h5>
-              <p>Contact us today to schedule a free quote!<br/>We come to you!</p>
-              <strong>970-420-3409<br/>info@summitkitchens.com</strong>
+              <h4>
+                <strong>FREE QUOTES!</strong>
+                <br/>
+                Contact us today <br/>to schedule a free quote!<br/>We come to you!<br/><br/>
+                970-420-3409<br/>info@summitkitchens.com
+              </h4>
             </Col>
           </Row>
         </Container>
