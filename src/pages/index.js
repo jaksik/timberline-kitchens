@@ -26,7 +26,7 @@ return (
     <div class="cover-img">
       <div class="overlay">
         <div class="text">
-          <h3>{project.node.frontmatter.title}</h3>
+          <h3 className="font-weight-bold">{project.node.frontmatter.title}</h3>
         </div>
       </div>
       <Img

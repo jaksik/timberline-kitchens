@@ -42,16 +42,16 @@ function Nav({ siteTitle, siteLogo }) {
             <AniLink fade to="/cabinet-refacing">
               <p>Cabinet Refacing</p>
             </AniLink>
-            <AniLink fade to="/process">
+            {/* <AniLink fade to="/process">
               <p>Process</p>
-            </AniLink>
+            </AniLink> */}
             <AniLink fade to="/our-work">
               <p>Our Work</p>
             </AniLink>
-            <AniLink fade to="/company">
+            {/* <AniLink fade to="/company">
               <p>Company</p>
             </AniLink>
-            {/* <AniLink fade to="/resources">
+            <AniLink fade to="/resources">
               <p>Resources</p>
             </AniLink> */}
             <AniLink fade to="/contact">

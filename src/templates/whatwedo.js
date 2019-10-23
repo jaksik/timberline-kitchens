@@ -10,8 +10,11 @@ export default ({ data }) => {
   const frontmatter = data.markdownRemark.frontmatter
   return (
     <Layout>
-      <Img fluid={frontmatter.images[0].image.childImageSharp.fluid} style={{maxHeight:`100vh`}}/>
-      
+      <div className="cover-image">
+        <Img 
+          fluid={frontmatter.images[0].image.childImageSharp.fluid} 
+          style={{height:`70vh`}}/>
+      </div>
       <div className="gallery-image portrait-image mt-5 mb-5">
         <Img fluid={frontmatter.images[1].image.childImageSharp.fluid} style={{maxHeight:`100vh`}}/>
       </div>

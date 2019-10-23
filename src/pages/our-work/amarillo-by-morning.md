@@ -1,6 +1,6 @@
 ---
 templateKey: album
-title: amarillo
+title: AMARILLO BY MORNING
 image: ../../images/amarillo/one.jpg
 images:
     - image: ../../images/amarillo/one.jpg

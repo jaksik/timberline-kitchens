@@ -1,6 +1,6 @@
 ---
 templateKey: album
-title: hub
+title: HUB OF THE HOME
 image: ../../images/hub/one.jpg
 images:
     - image: ../../images/hub/one.jpg

@@ -12,6 +12,13 @@ h2, h3, h4, h5, p {
   margin: 30px 0px;
 }
 
+.cover-img {
+  max-height: 68vh;
+  overflow: hidden;
+  margin: 40px auto;
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
     .page-container {
       margin: 20px;

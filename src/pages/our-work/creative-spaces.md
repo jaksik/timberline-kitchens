@@ -1,6 +1,6 @@
 ---
 templateKey: album
-title: creative
+title: CREATIVE SPACES
 image: ../../images/creative/creative-one.jpg
 images:
     - image: ../../images/creative/creative-one.jpg
