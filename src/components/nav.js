@@ -1,14 +1,11 @@
-import { Link } from "gatsby"
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
-
-import PropTypes from "prop-types"
 import React, { useState } from 'react';
 import { Row, Col } from "reactstrap";
+import PropTypes from "prop-types"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Img from "gatsby-image"
 import "./nav.css"
 
 function Nav({ siteTitle, siteLogo }) {
-  // Declare a new state variable, which we'll call "count"
   const [open, toggle] = useState(false);
   return (
     <header>
@@ -36,24 +33,15 @@ function Nav({ siteTitle, siteLogo }) {
         <div id="myNav" className="nav-overlay" style={{height:(open? `100%` : `0%`)}}>
           <a className="closebtn" onClick={() => toggle(!open)}><h4>Close</h4></a>
           <div className="nav-content">
-          <AniLink fade to="/new-cabinetry">
+            <AniLink fade to="/new-cabinetry">
               <p>New Cabinetry</p>
             </AniLink>
             <AniLink fade to="/cabinet-refacing">
               <p>Cabinet Refacing</p>
             </AniLink>
-            {/* <AniLink fade to="/process">
-              <p>Process</p>
-            </AniLink> */}
             <AniLink fade to="/our-work">
               <p>Our Work</p>
             </AniLink>
-            {/* <AniLink fade to="/company">
-              <p>Company</p>
-            </AniLink>
-            <AniLink fade to="/resources">
-              <p>Resources</p>
-            </AniLink> */}
             <AniLink fade to="/contact">
               <p>Contact</p>
             </AniLink>
