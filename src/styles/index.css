@@ -2,6 +2,54 @@ h2, h3, h4, h5, p {
   font-family: sans-serif;
 }
 
+.overlay-content {
+  font-family: unset;
+  top: 40%;
+  position: absolute;
+  color: black;
+  text-align: center;
+  width: 100%;
+  opacity: 0%;
+  animation-name: example;
+  animation-duration: 1000s;
+  animation-delay: 2s;
+}
+
+@keyframes example {
+  0% {opacity: 0%;}
+  1% {opacity: 100%;}
+  100% {opacity: 100%;}
+
+}
+
+.landing-button {
+  border: 1px solid black;
+  background: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.landing-button:hover {
+  background: black;
+  color: white;
+}
+.video-overlay {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  height: 120vh;
+  position: fixed;
+  z-index: 2;
+  margin-top: -20vh;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
 .page-container {
     margin: 40px;
 }

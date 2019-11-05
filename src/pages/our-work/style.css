@@ -20,6 +20,8 @@ html, body {
     background-color: rgba(0,0,0,0);
     z-index: 2;
     cursor: pointer;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 .overlay:hover {

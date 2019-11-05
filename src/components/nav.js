@@ -33,16 +33,16 @@ function Nav({ siteTitle, siteLogo }) {
         <div id="myNav" className="nav-overlay" style={{height:(open? `100%` : `0%`)}}>
           <a className="closebtn" onClick={() => toggle(!open)}><h4>Close</h4></a>
           <div className="nav-content">
-            <AniLink fade to="/new-cabinetry">
+            <AniLink className="nav-item" fade to="/new-cabinetry">
               <p>New Cabinetry</p>
             </AniLink>
-            <AniLink fade to="/cabinet-refacing">
+            <AniLink className="nav-item" fade to="/cabinet-refacing">
               <p>Cabinet Refacing</p>
             </AniLink>
-            <AniLink fade to="/our-work">
+            <AniLink className="nav-item" fade to="/our-work">
               <p>Our Work</p>
             </AniLink>
-            <AniLink fade to="/contact">
+            <AniLink className="nav-item" fade to="/contact">
               <p>Contact</p>
             </AniLink>
           </div>
