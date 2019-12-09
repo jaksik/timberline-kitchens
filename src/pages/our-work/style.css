@@ -1,11 +1,6 @@
-html, body {
-    height: 100%;
-}
-
 .cover-img {
     max-height: 68vh;
     overflow: hidden;
-    margin: 40px auto;
     position: relative;
 }
 
@@ -17,9 +12,8 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0.24);
     z-index: 2;
-    cursor: pointer;
     -webkit-transition: background-color 1s;
     transition: background-color 1s;
 }
@@ -29,14 +23,9 @@ html, body {
 }
 
 .text{
-    position: absolute;
-    top: 50%;
-    left: 20%;
     font-size: 50px;
     color: white;
     font-weight: bold;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
 }
 
 .static-overlay {
