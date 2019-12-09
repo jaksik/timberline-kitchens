@@ -9,10 +9,13 @@ function Nav({ siteTitle, siteLogo }) {
   const [open, toggle] = useState(false);
   return (
     <header>
-      <Row className="no-gutters align-items-center justify-content-between">
+      <Row className="no-gutters align-items-center justify-content-between h-100" style={{ minHeight: `75px` }}>
 
         <Col xs="3">
-          <AniLink fade to="/"><Img fluid={siteLogo} className="m-2 m-sm-3 m-lg-4" /></AniLink>
+          <AniLink fade to="/">
+            {/* <Img fluid={siteLogo} className="m-2 m-sm-3 m-lg-4" /> */}
+            <h2>FOCO Cabinets</h2>
+          </AniLink>
         </Col>
 
         <Col xs="2" className="d-lg-none">
@@ -25,20 +28,20 @@ function Nav({ siteTitle, siteLogo }) {
           </span>
         </Col>
 
-        <Col lg="5" className={(open ? `nav-overlay` : ``)}>
-          <Row>
-              <Col lg="3">
+        <Col lg="5" className={(open ? `mobile-open` : `mobile-closed`)}>
+          <Row className="no-gutters nav-item-wrapper align-items-center pb-5 pb-lg-0">
+
+            <Col xs="12">
+              <div className="nav-item-container justify-content-end">
                 <AniLink className="nav-item" fade to="/cabinetry"><p>Cabinetry</p></AniLink>
-              </Col>
-              <Col lg="3">
+
                 <AniLink className="nav-item" fade to="/refacing"><p>Refacing</p></AniLink>
-              </Col>
-              <Col lg="3">
+
                 <AniLink className="nav-item" fade to="/our-work"><p>Our Work</p></AniLink>
-              </Col>
-              <Col lg="3">
+
                 <AniLink className="nav-item" fade to="/contact"><p>Contact</p></AniLink>
-              </Col>
+              </div>
+            </Col>
           </Row>
         </Col>
       </Row>

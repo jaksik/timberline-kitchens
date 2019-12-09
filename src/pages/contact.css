@@ -12,7 +12,7 @@
 }
 
 form {
-    max-width: 850px;
+    max-width: 600px;
     text-align: center;
 }
 
@@ -24,18 +24,12 @@ input, select, textarea, label {
 }
 
 .form-input {
-    margin: 10px auto;
+    margin: 9px auto;
     border-top: none;
     border-left: none; 
     border-right: none;
-    border-bottom: 1px solid rgb(218, 218, 218);
+    border-bottom: 1.7px solid rgb(183, 183, 183);
     font-size: larger;
-}
-
-label {
-    margin: 15px 0 -15px;
-    color: black;
-    text-align: left;
 }
 
 #waiver-button {
@@ -44,15 +38,13 @@ label {
 
 .submit-button {
     border: 1px solid black;
-
-    width: 250px;
     text-align: center;
     background-color: white;
     color: black;
     border-radius: 4px;
     font-weight: bold;
     margin: 45px auto;
-    padding: 13px;
+    padding: 10px;
 }
 
 .submit-button:hover {
@@ -78,8 +70,8 @@ input[type="date"]:before {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-size: 25px;
-    line-height: 70px;
+    font-size: 20px;
+    line-height: 40px;
   }
 
 @media only screen and (min-width: 768px) {

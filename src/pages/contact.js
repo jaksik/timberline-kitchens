@@ -1,13 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import { Container, Row, Col } from "reactstrap"
+import { graphql } from "gatsby"
+import { Row, Col } from "reactstrap"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "./contact.css"
 
 const ContactPage = ({ data }) => {
-  console.log("data: ", data)
   return (
     <Layout>
       <SEO title="Page two" />
@@ -16,7 +15,7 @@ const ContactPage = ({ data }) => {
         <div className="static-overlay">
             <Row className="no-gutters align-items-center text" style={{height:`100%`}}>
               <Col xs="12" className="pl-4">
-                <h4><strong>STOP BY OUR SHOW ROOM</strong></h4>
+                <h4 className="mb-4"><strong>STOP BY OUR SHOW ROOM</strong></h4>
                 <h4><strong>120 BUFFALO STREET <br />DILLON, COLORADO 80435</strong></h4>
               </Col>
             </Row>
@@ -29,20 +28,8 @@ const ContactPage = ({ data }) => {
         />
       </div>
 
-      <Row className="no-gutters justify-content-center">
-        <Container style={{ margin: `0 auto` }}>
-          <h4 className="font-weight-bold">Call For An Appointment</h4>
-          <h4>970-389-8983</h4>
-
-          <h4 className="font-weight-bold">General Inquiries</h4>
-          <h4>info@mtnkitchens.com</h4>
-
-        </Container>
-      </Row>
-      {/* <h4 style={{ width:`100%`, textAlign:`center`}}><strong>Contact Us Today</strong></h4>
-    <h4 style={{ width:`100%`, textAlign:`center`}}>
-      Schedule A Free Quote!<br/>Tell Us About Your Project<br/>Ask Any Question!<br/>
-    </h4> */}
+     
+      <h4 className="text-center mt-5">Let's Start Your Project</h4>
 
       <form
         name="contact"
@@ -58,9 +45,21 @@ const ContactPage = ({ data }) => {
         <input required className="form-input" name="email" placeholder="Email*" type="email" /><br />
         <input className="form-input" name="phone" placeholder="Phone Number" type="number" /><br />
         <input required className="form-input" name="city" placeholder="Town / City" type="text" /><br />
-        <textarea className="form-input" name="message" placeholder="Schedule an appointment, tell us about your project, or ask any question!" type="textarea" /><br />
+        <textarea className="form-input" name="message" placeholder="Request an appointment or ask us anything!" type="textarea" /><br />
         <button className="submit-button">Let's Get Started</button>
       </form>
+
+
+      {/* <Row className="no-gutters justify-content-center">
+        <Container style={{ margin: `0 auto` }}>
+          <h4 className="font-weight-bold">Call For An Appointment</h4>
+          <h4>970-389-8983</h4>
+
+          <h4 className="font-weight-bold">General Inquiries</h4>
+          <h4>info@mtnkitchens.com</h4>
+
+        </Container>
+      </Row> */}
 
     </Layout>
   )

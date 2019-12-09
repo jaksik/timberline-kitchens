@@ -27,10 +27,10 @@ export default ({ data }) => {
 
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
 
-          <div className="gallery-image portrait-image mt-5 mb-5">
+          {/* <div className="gallery-image portrait-image mt-5 mb-5">
             <Img fluid={frontmatter.images[1].image.childImageSharp.fluid} style={{ maxHeight: `100vh` }} />
-          </div>
-          <Row className="no-gutters" style={{ textAlign: `center` }}>
+          </div> */}
+          {/* <Row className="no-gutters" style={{ textAlign: `center` }}>
             <Col xs="12" sm="6" className="mt-md-5">
               <h4 className="font-weight-bold">Catalog Downloads</h4>
               <Link><h5>Styles, Woods, & Finishes</h5></Link>
@@ -46,7 +46,7 @@ export default ({ data }) => {
                 970-420-3409<br />info@summitkitchens.com
               </h5>
             </Col>
-          </Row>
+          </Row> */}
         </div>
       </Row>
 
